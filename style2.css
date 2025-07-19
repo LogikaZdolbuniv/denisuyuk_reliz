@@ -1,29 +1,29 @@
 body {
     font-family: sans-serif;
 }
+
 h1 {
     text-align: center;
 }
 
-header{
+header {
+    display: flex;
     justify-content: center;
-
 }
-
 
 nav {
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-    padding: 25px 100px 25px 95px;
+    padding: 25px 100px;
     display: flex;
-    margin: 3px;
     justify-content: center;
-    background-image: linear-gradient(blue,red);
+    margin: 3px;
+    background-image: linear-gradient(blue, red);
 }
 
-.roz{
-display: flex;
-justify-content: center;
+.roz {
+    display: flex;
+    justify-content: center;
 }
 
 a {
@@ -33,22 +33,11 @@ a {
     background-color: navy;
     padding: 10px;
     border-radius: 10px;
-    background-image: linear-gradient(blue,red);
-    justify-content: center;
-    
+    background-image: linear-gradient(blue, red);
 }
-     
-
 
 a:hover {
-  box-shadow: 5px 5px 3px 0 gold;
-}
-
-.catalog a {
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px dotted black;
-    font-size: 20px;
+    box-shadow: 5px 5px 3px 0 gold;
 }
 
 .catalog {
@@ -60,14 +49,16 @@ a:hover {
     opacity: 0.5;
 }
 
-.catalog:hover{
+.catalog:hover {
     opacity: 1;
-
 }
 
-
-
-
+.catalog a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px dotted black;
+    font-size: 20px;
+}
 
 .product {
     width: 150px;
@@ -81,6 +72,7 @@ a:hover {
 }
 
 .product::before {
+    content: ""; 
     width: 30px;
     height: 30px;
     display: block;
@@ -91,8 +83,9 @@ a:hover {
 .product:hover::before {
     opacity: 1;
 }
+
 footer {
-    background-image: linear-gradient(blue,red);
+    background-image: linear-gradient(blue, red);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -109,9 +102,7 @@ footer {
     font-weight: bolder;
 }
 
-
-
-promo-blok{
+.promo-blok {
     position: fixed;
     top: 30px;
     right: 30px;
@@ -120,21 +111,30 @@ promo-blok{
     border-radius: 10px;
     width: 150px;
     text-align: center;
-
 }
-promo-blok .social{
+
+.promo-blok .social {
     margin: 5px auto;
     display: inline-block;
 }
 
-promo-blok .social img hover{
-    transform: scale(1);
-}
-
-img{
-    transition: trabsform 0.3s ease;
-}
-
-img:hover{
+.promo-blok .social img:hover {
     transform: scale(1.1);
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+
+p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 10px 0;
 }
