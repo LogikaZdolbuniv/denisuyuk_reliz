@@ -2,28 +2,22 @@ body {
     font-family: sans-serif;
 }
 
-
 h1 {
     text-align: center;
 }
 
-header{
+header {
     justify-content: center;
-
 }
-
 
 nav {
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     padding: 25px 100px 25px 95px;
     display: flex;
-    justify-content: center ;
-    background-image: linear-gradient(blue,red);
+    justify-content: center;
+    background-image: linear-gradient(blue, red);
 }
-}
-
-
 
 a {
     text-decoration: none;
@@ -32,13 +26,11 @@ a {
     background-color: navy;
     padding: 10px;
     border-radius: 10px;
-     background-image: linear-gradient(white,navy);
+    background-image: linear-gradient(white, navy);
 }
-     
-
 
 a:hover {
-  box-shadow: 5px 5px 3px 0 gold;
+    box-shadow: 5px 5px 3px 0 gold;
 }
 
 .catalog a {
@@ -74,13 +66,15 @@ a:hover {
     display: block;
     opacity: 0.5;
     margin-bottom: 10px;
+    content: "";
 }
 
 .product:hover::before {
     opacity: 1;
 }
+
 footer {
-    background-image: linear-gradient(blue,red);
+    background-image: linear-gradient(blue, red);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -97,9 +91,7 @@ footer {
     font-weight: bolder;
 }
 
-
-
-promo-blok{
+.promo-blok {
     position: fixed;
     top: 30px;
     right: 30px;
@@ -108,25 +100,21 @@ promo-blok{
     border-radius: 10px;
     width: 150px;
     text-align: center;
-
 }
-promo-blok .social{
+
+.promo-blok .social {
     margin: 5px auto;
     display: inline-block;
 }
 
-promo-blok .social img hover{
+.promo-blok .social img:hover {
     transform: scale(1.1);
 }
 
-
-img{
-    transition: trabsform 0.3s ease;
+img {
+    transition: transform 0.3s ease;
 }
 
-img:hover{
+img:hover {
     transform: scale(1.1);
 }
-
-
-
